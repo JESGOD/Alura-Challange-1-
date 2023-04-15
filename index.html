@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alura Challange 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/857f5cafb2.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="logica.js" defer></script>
+  </head>
+  <body class="container">
+    <header>
+      <span class="contenedor-logo"
+        ><img src="recursos/imgs/Vector.png" alt=""
+      /></span>
+    </header>
+    <main class="contenedor">
+      <section class="inputs-usuario">
+        <textarea
+          name="texto"
+          class="input-texto"
+          cols="50"
+          rows="15"
+          placeholder="Ingrese el texto aqui"
+          autofocus
+          required
+        ></textarea>
+        <section class="contenedor-btns">
+          <span class="aviso"
+            ><i class="fa-solid fa-circle-exclamation"></i>solo letras
+            minusculas y sin acentos</span
+          >
+          <div class="btns">
+            <button class="btn_encriptar btn"><a href="#">Encriptar</a></button>
+            <button class="btn_desencriptar btn">
+              <a href="#">Desencriptar</a>
+            </button>
+          </div>
+        </section>
+      </section>
+      <aside class="contenedor_resultado">
+        <textarea class="resultado esconder" disabled></textarea>
+        <section class="sin_resultado esconder" >
+          <img src="recursos/imgs/Muñeco.png" class="img_resultado" alt="" />
+          <h3 class="">Ningun mensaje fue encontrado</h3>
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </section>
+        <button class="btn" onclick="copiarTexto()">
+          <a href="#">Copiar</a>
+        </button>
+      </aside>
+    </main>
+  </body>
+</html>
